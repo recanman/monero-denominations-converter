@@ -1,0 +1,65 @@
+/* made by recanman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 128px;
+}
+
+div {
+  margin-top: 30px;
+}
+
+div label,
+.converter input,
+.converter select,
+.converter button {
+  margin-top: 10px;
+}
+
+div button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.result {
+  margin-top: 30px;
+  display: none;
+}
+
+.result p {
+  margin-top: 5px;
+}
+
+#convertedAmount {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+th {
+  background-color: #f2f2f2;
+}

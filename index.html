@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Monero Denominations Converter</title>
+  <meta http-equiv="Cache-Control" content="max-age=31536000">
+  <meta http-equiv="Pragma" content="cache">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <h1>Monero Denominations Converter</h1>
+  <div>
+    <form id="converter">
+      <label for="number">Convert:</label>
+      <input type="text" name="number" required>
+      <select class="inputDenomination" name="numberUnit" required></select>
+      
+      <span>to:</span>
+
+      <select class="inputDenomination" name="targetUnit" required></select>
+      <input type="submit" value="Convert" />
+    </form>
+  </div>
+  <div class="result" id="result">
+    <p>Result:</p>
+    <p id="convertedAmount"></p>
+  </div>
+
+  <div>
+    <h3>Denominations of Monero Table</h3>
+    <p class="text-muted">From <a href="https://www.getmonero.org/resources/moneropedia/denominations.html">Moneropedia</a>.</p>
+    <table>
+      <tr>
+        <th>Units</th>
+        <th>Multiplier</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>piconero</td>
+        <td>10<sup>-12</sup></td>
+        <td>0.000000000001</td>
+      </tr>
+      <tr>
+        <td>nanonero</td>
+        <td>10<sup>-9</sup></td>
+        <td>0.000000001</td>
+      </tr>
+      <tr>
+        <td>micronero</td>
+        <td>10<sup>-6</sup></td>
+        <td>0.000001</td>
+      </tr>
+      <tr>
+        <td>millinero</td>
+        <td>10<sup>-3</sup></td>
+        <td>0.001</td>
+      </tr>
+      <tr>
+        <td>centinero</td>
+        <td>10<sup>-2</sup></td>
+        <td>0.01</td>
+      </tr>
+      <tr>
+        <td>decinero</td>
+        <td>10<sup>-1</sup></td>
+        <td>0.1</td>
+      </tr>
+      <tr>
+        <td>monero</td>
+        <td>10<sup>0</sup></td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>decanero</td>
+        <td>10<sup>1</sup></td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>hectonero</td>
+        <td>10<sup>2</sup></td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>kilonero</td>
+        <td>10<sup>3</sup></td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td>meganero</td>
+        <td>10<sup>6</sup></td>
+        <td>1,000,000</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="assets/js/js-big-decimal.min.js"></script>
+  <script src="assets/js/converter.js"></script>
+</body>
+
+</html>
